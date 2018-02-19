@@ -14,20 +14,18 @@
   (package-install 'use-package))
 
 (require 'use-package)
-(setq use-package-always-ensure t)
-
-(package-initialize)
-
-(eval-when-compile
-  (require 'use-package))
-
-(use-package projectile)
 
 (custom-set-variables
- '(package-selected-packages (quote (use-package))))
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages (quote (helm use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+(package-initialize)
